@@ -2,12 +2,11 @@ pipeline {
     agent {
         docker {
             image 'naveenkumarsp/univerbase:version1'
-            args '-p 3000:3000'
-			args '-p 5000:5000'
+            args '-p 5000:5000'
         }
     }
-    environment {
-        CI = 'true' 
+    environment { 
+        CI = 'true'
     }
     stages {
         stage('Build') {
@@ -15,9 +14,16 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('Test') { 
+        stage('Test') {
             steps {
-                sh './jenkins/test.sh' 
+                sh './jenkins/test.sh'
+            }
+        }
+        stage('Staging') { 
+            steps {
+                sh './jenkins/deliver.sh' 
+                input message: 'Do you want to publish the changes? (Click "Proceed" to continue)' 
+                sh './jenkins/kill.sh' 
             }
         }
     }
