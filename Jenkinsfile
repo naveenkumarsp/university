@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'naveenkumarsp/univerbase' 
+            image 'naveenkumarsp/univerbase:version1' 
             args '-p 3000:3000' 
         }
     }
