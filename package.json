@@ -8,7 +8,8 @@
   "main": "server.js",
   "scripts": {
     "webpack": "webpack",
-    "start": "node server.js"
+    "test": "react-scripts test --env=jsdom",
+    "start": "node server.js",
   },
   "author": "Christophe Coenraets <ccoenraets@gmail.com> (http://coenraets.org/)",
   "license": "ISC",
