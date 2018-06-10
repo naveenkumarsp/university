@@ -9,7 +9,7 @@
   "scripts": {
     "webpack": "webpack",
     "test": "test --env=jsdom",
-    "start": "node server.js",
+    "start": "node server.js"
   },
   "author": "Christophe Coenraets <ccoenraets@gmail.com> (http://coenraets.org/)",
   "license": "ISC",
