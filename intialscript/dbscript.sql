@@ -1,0 +1,2 @@
+CREATE USER uadmin1 WITH PASSWORD 'drdoom13';
+CREATE DATABASE univer WITH OWNER uadmin1;
