@@ -8,7 +8,7 @@
   "main": "server.js",
   "scripts": {
     "webpack": "webpack",
-    "test": "react-scripts test --env=jsdom",
+    "test": "test --env=jsdom",
     "start": "node server.js",
   },
   "author": "Christophe Coenraets <ccoenraets@gmail.com> (http://coenraets.org/)",
