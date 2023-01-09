@@ -18,7 +18,7 @@
     "body-parser": "^1.14.2",
     "compression": "^1.6.1",
     "express": "^4.13.4",
-    "method-override": "^2.3.5",
+    "method-override": "^3.0.0",
     "moment": "^2.11.2",
     "path": "^0.12.7",
     "pg": "^4.4.4"
